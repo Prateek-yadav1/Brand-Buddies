@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kadwa&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <title>Dance Influencers</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding-top: 60px;
+            font-family: Inter, sans-serif;
+        }
+
+        .v512_142 {
+            width: 100%;
+            max-width: 1200px;
+            background: rgba(255,255,255,1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Right-aligned filter buttons using select dropdowns */
+        .filter-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            background: rgba(255,255,255,1);
+            border: 1px solid rgba(155,155,155,1);
+            border-radius: 30px;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        /* Center the main title */
+        .v512_159 {
+            color: rgba(0,0,0,1);
+            font-family: Kadwa, serif;
+            font-weight: bold;
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Create a grid for the influencer cards */
+        .influencer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .influencer-card {
+            background: rgba(217,217,217,1);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .influencer-image {
+            width: 100%;
+            height: 395px;
+            object-fit: cover;
+        }
+
+        /* Directly show influencer info */
+        .influencer-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+        }
+
+        /* Light blue gradient boxes */
+        .gradient-box {
+            background: linear-gradient(to bottom, rgba(239,245,255,1), rgba(172,212,255,1));
+            border-radius: 20px;
+            height: 395px; /* Match the image height */
+            width: 100%; /* Adjust to full width within the grid */
+            margin-top: 20px;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .gradient-box:hover {
+            transform: scale(1.03);
+        }
+
+        /* Remove text inside gradient boxes */
+        .gradient-box h3, .gradient-box p {
+            display: none;
+        }
+
+        /* Add heart icon */
+        .heart-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: black;
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .heart-icon.liked {
+            color: red;
+        }
+
+        /* Center the "Next Page" button */
+        .next-page-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .v512_185 {
+            background: rgba(255,255,255,1);
+            border: 1px solid rgba(100,100,100,1);
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .v512_185:hover {
+            background-color: rgba(240,240,240,1);
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .influencer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="v512_142">
+        <div class="filter-buttons">
+            <!-- Location Dropdown -->
+            <select>
+                <option value="">Location</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="meghalaya">Meghalaya</option>
+            </select>
+            <!-- Price Dropdown -->
+            <select>
+                <option value="">Price</option>
+                <option value="100-200">$100 - $200</option>
+                <option value="200-500">$200 - $500</option>
+                <option value="500+">$500+</option>
+            </select>
+            <!-- Gender Dropdown -->
+            <select>
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <!-- Age Dropdown -->
+            <select>
+                <option value="">Age</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="35+">35+</option>
+            </select>
+            <!-- Language Dropdown -->
+            <select>
+                <option value="">Language</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <h1 class="v512_159">Dance Influencers</h1>
+
+        <div class="influencer-grid">
+            <div class="influencer-card">
+                <img src="images/v512_188.png" alt="Dhanashree Verma" class="influencer-image">
+                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                <div class="influencer-info">
+                    <span>Dhanashree Verma<br>Maharashtra, India</span>
+                </div>
+            </div>
+            <div class="influencer-card">
+                <img src="images/v512_166.png" alt="Akash Thapa" class="influencer-image">
+                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                <div class="influencer-info">
+                    <span>Akash Thapa<br>Uttarakhand, India</span>
+                </div>
+            </div>
+            <div class="influencer-card">
+                <img src="images/v512_167.png" alt="Daphisha Kharbani" class="influencer-image">
+                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                <div class="influencer-info">
+                    <span>Daphisha Kharbani<br>Meghalaya, India</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="influencer-grid">
+            <div class="gradient-box">
+                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="gradient-box">
+                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="gradient-box">
+                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+            </div>
+        </div>
+
+        <div class="next-page-button">
+            <div class="v512_185">
+                <span>Next Page</span>
+                <div class="v512_187"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kadwa&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Fashion Influencers</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding-top: 60px;
+            font-family: Inter, sans-serif;
+        }
+
+        .v290_12 {
+            width: 100%;
+            max-width: 1200px;
+            background: rgba(255,255,255,1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Dropdown menus for filters */
+        .filter-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            background: rgba(255,255,255,1);
+            border: 1px solid rgba(155,155,155,1);
+            border-radius: 30px;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            appearance: none;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        /* Centered title */
+        .v305_52 {
+            color: rgba(0,0,0,1);
+            font-family: Kadwa, serif;
+            font-weight: Bold;
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Influencers grid layout */
+        .influencer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .influencer-card {
+            background: rgba(217,217,217,1);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .influencer-image {
+            width: 100%;
+            height: 395px;
+            object-fit: cover;
+        }
+
+        /* Always visible influencer info */
+        .influencer-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+        }
+
+        .gradient-box {
+            background: linear-gradient(to bottom, rgba(239,245,255,1), rgba(172,212,255,1));
+            border-radius: 20px;
+            height: 395px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .next-page-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .v316_3 {
+            background: rgba(255,255,255,1);
+            border: 1px solid rgba(100,100,100,1);
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .v316_3:hover {
+            background-color: rgba(240,240,240,1);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .influencer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="v290_12">
+        <!-- Filter dropdowns -->
+        <div class="filter-buttons">
+            <select>
+                <option value="">Location</option>
+                <option value="delhi">Delhi</option>
+                <option value="uttar-pradesh">Uttar Pradesh</option>
+                <option value="new-delhi">New Delhi</option>
+            </select>
+            <select>
+                <option value="">Price</option>
+                <option value="100-200">$100 - $200</option>
+                <option value="200-500">$200 - $500</option>
+                <option value="500+">$500+</option>
+            </select>
+            <select>
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <select>
+                <option value="">Age</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="35+">35+</option>
+            </select>
+            <select>
+                <option value="">Language</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="other">Other</option>
+            </select>
+            <select>
+                <option value="">Clear all</option>
+            </select>
+        </div>
+
+        <!-- Title -->
+        <h1 class="v305_52">Fashion Influencers</h1>
+
+        <!-- Influencers Grid -->
+        <div class="influencer-grid">
+            <div class="influencer-card">
+                <img src="images/v307_3.png" alt="Lakshay Thakur" class="influencer-image">
+                <div class="influencer-info">
+                    <span>Lakshay Thakur<br>New Delhi, India</span>
+                </div>
+            </div>
+            <div class="influencer-card">
+                <img src="images/v307_4.png" alt="Gaurav Malhotra" class="influencer-image">
+                <div class="influencer-info">
+                    <span>Gaurav Malhotra<br>Delhi, India</span>
+                </div>
+            </div>
+            <div class="influencer-card">
+                <img src="images/v307_7.png" alt="Ashish Rana" class="influencer-image">
+                <div class="influencer-info">
+                    <span>Ashish Rana<br>Uttar Pradesh, India</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="influencer-grid">
+            <div class="gradient-box">
+            </div>
+            <div class="gradient-box">
+            </div>
+            <div class="gradient-box">
+            </div>
+        </div>
+
+        <!-- Next page button -->
+        <div class="next-page-button">
+            <div class="v316_3">
+                <span>Next Page</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
