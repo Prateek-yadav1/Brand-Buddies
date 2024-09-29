@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand Buddies</title>
     <link rel="stylesheet" href="BrandBuddies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -14,8 +16,8 @@
                 <input type="text" placeholder="Search">
             </div>
                 
-                  <p class="about"><a href="#">About Us</a></p> 
-                   <p class="login"><a href="#">Login</a></p>         
+                  <p class="about"><a href="http://127.0.0.1:5500/Brand%20Buddies/aboutus.html">About Us</a></p> 
+                   <p class="login"><a href="http://127.0.0.1:5500/Brand%20Buddies/signup.html">Login</a></p>         
     </header>
     <section class="hero">
         <h1 class="gradient-text">Influencer Marketing Made Easy</h1>
@@ -23,15 +25,15 @@
     </section>
     <section class="search-fields">
         <div class="search-field">
-            <select>
-                <option value="">Choose a platform</option>
-                <option value="instagram">Instagram</option>
-                <option value="facebook">Facebook</option>
-                <option value="youtube">YouTube</option>
+            <select onchange="location = this.value;">
+                <option value="">Choose a category</option>
+                <option value="http://127.0.0.1:5500/Brand%20Buddies/categories-dance.html">Dance</option>
+                <option value="http://127.0.0.1:5500/Brand%20Buddies/categories-fashion.html">Fashion</option>
+                <option value="http://127.0.0.1:5500/Brand%20Buddies/categories-travel.html">Travel</option>
             </select>
         </div>
         <div class="search-field">
-            <input type="text" placeholder="Category">
+            <input type="text" placeholder="Platform">
             <button class="search-btn">🔍</button>
         </div>
     </section>
@@ -40,24 +42,24 @@
     <p class="h2">Hire top influencers across all platforms</p>
     <div class="influencer-container">
         <div class="influencer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-CP9OQy_m5eOsjqKrAf6nh4ypP0YTbo4zA&s">
-            <h3>Ankit Baiyanpuria</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpcg1I2_K25iEcrE5uYP6_kvSHHmRjht-VbQ&s">
+            <a href="https://www.youtube.com/channel/UCSvoZtSPcju-jTBwxwh_29A" target="_blank"><h3>Ankit Baiyanpuria</h3></a>
             <p>Haryana, India</p>
             <p>Youtube</p>
             <p>Fitness Influencer</p>
             <p>$500</p>
         </div>
         <div class="influencer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-CP9OQy_m5eOsjqKrAf6nh4ypP0YTbo4zA&s" alt="Karan Sehgal">
-            <h3>Karan Sehgal</h3>
+            <img src="https://yt3.googleusercontent.com/ytc/AIdro_kgGwuEjeuj0W9qxbNfy3I3ygxMnhAf0S4f5CcmH1nB3HQ=s900-c-k-c0x00ffffff-no-rj" alt="Karan Sehgal">
+            <a href="https://www.instagram.com/karansehgal__/?hl=en" target="_blank"><h3>Karan Sehgal</h3></a>
             <p>Gurugram, Haryana, India</p>
             <p>Instagram</p>
             <p>Lifestyle Influencer</p>
             <p>$250</p>
         </div>
         <div class="influencer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnnRCNCDbW6mFs0jtktyKYXSCRjwwyqmZkVw&s" alt="Tehraan Bakshi">
-            <h3>Tehraan Bakshi</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qtcDm_ooQyi-iNWa8yKsS5jRdF12ntYvhg&s" alt="Tehraan Bakshi">
+            <a href="https://www.instagram.com/tehraanbakshi/?hl=en" target="_blank"><h3>Tehraan Bakshi</h3></a>
             <p>Mumbai, Maharashtra, India</p>
             <p>Instagram</p>
             <p>Fashion Influencer</p>
@@ -70,28 +72,25 @@
     <p class="h2">Hire instagram influencers</p>
     <div class="influencer-container">
         <div class="influencer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyxdndsVXhEu12OSHQ971iCP6TbKDXwFCBvQ&s" alt="Ankit Baiyanpuria">
-            <h3>Ankit Baiyanpuria</h3>
-            <p>Haryana, India</p>
-            <p>Youtube</p>
-            <p>Fitness Influencer</p>
-            <p>$500</p>
-        </div>
-        <div class="influencer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-CP9OQy_m5eOsjqKrAf6nh4ypP0YTbo4zA&s" alt="Karan Sehgal">
-            <h3>Karan Sehgal</h3>
-            <p>Gurugram, Haryana, India</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQretvGAA6_l_tAC6nRfC4x1LyEsbtfSo65bA&s" alt="Lovepreet">
+            <a href="https://www.instagram.com/boyonglobe/" target="_blank"><h3>Lovepreet Jaggi</h3></a>
             <p>Instagram</p>
-            <p>Lifestyle Influencer</p>
-            <p>$250</p>
+            <p>Travel  Influencer</p>
+            <p>$50</p>
         </div>
         <div class="influencer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnnRCNCDbW6mFs0jtktyKYXSCRjwwyqmZkVw&s" alt="Tehraan Bakshi">
-            <h3>Tehraan Bakshi</h3>
-            <p>Mumbai, Maharashtra, India</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbkgymQLTLIFBY0F2JVeTyLPSvAuKPyOKKojjFmUPkiMoe9boLh9HzEUH9zvyLng0oT_c&usqp=CAU" alt="Riti">
+            <a href="https://www.instagram.com/ritikumariupadhyay24/" target="_blank"><h3>Riti Kumari</h3></a>
+            <p>Instagram</p>
+            <p>Academic Influencer</p>
+            <p>$75</p>
+        </div>
+        <div class="influencer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxIRqY52FvZ_GdAmUuRzw_2Xs2zqXc7sB5Q&s" alt="Sahil">
+            <a href="https://www.instagram.com/sahilansariofficial/?hl=en" target="_blank"><h3>Sahil Ansari </h3></a>
             <p>Instagram</p>
             <p>Fashion Influencer</p>
-            <p>$200</p>
+            <p>$70</p>
         </div>
     </div>
 </section>
@@ -100,19 +99,22 @@
         <h2>Categories</h2>
         <div class="grid-container">
             <div class="category">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFOxzCDwS2lyV0X9DEDs_-WeTMhr9_gv78ew&s" alt="Dance">
-                <div class="overlay">Dance</div>
+                <a href="http://127.0.0.1:5500/Brand%20Buddies/categories-dance.html"><img src="https://images.theconversation.com/files/430015/original/file-20211103-27-1gojlp9.jpg?ixlib=rb-4.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" alt="Dance">
+                </a>
+                 <div class="overlay">Dance</div>
             </div>
             <div class="category">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7P3yM20_YoJrat2nctt93rFUExj5LY7kfg&s" alt="Travel">
-                <div class="overlay">Travel</div>
+                <a href="http://127.0.0.1:5500/Brand%20Buddies/categories-travel.html"><img src="https://xnd-prod-static.s3.ap-south-1.amazonaws.com/tnd/digest_media/141_20201013185512_Consumer-Survey-Finds-70-Percent-of-Travelers-Plan-to-Holiday-in-2021.jpg" alt="Travel">
+                </a>
+                 <div class="overlay">Travel</div>
             </div>
             <div class="category">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3XzCoPJNv2ROqW8GVxd0IHZfPbRiMUqO0JQ&s" alt="Fashion">
-                <div class="overlay">Fashion</div>
+                <a href="http://127.0.0.1:5500/Brand%20Buddies/categories-fashion.html"><img src="https://i0.wp.com/fashion2apparel.com/wp-content/uploads/2023/02/fashion-trends.jpg?resize=600%2C400&quality=100&ssl=1" alt="Fashion">
+                </a>
+                 <div class="overlay">Fashion</div>
             </div>
             <div class="category">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3XzCoPJNv2ROqW8GVxd0IHZfPbRiMUqO0JQ&s" alt="Beauty">
+                <img src="https://orane.com/wp-content/uploads/2020/04/99.-Best-Beauty-Academy-scaled-1.jpg" alt="Beauty">
                 <div class="overlay">Beauty</div>
             </div>
         </div>
@@ -184,13 +186,12 @@
     </div>
 </section>
 <section class="faq">
-        <h3>What is Influencer Marketing?<span class="plus-sign">+</span></h3><hr>
-        <h3>How Does Influencer Marketing Work?<span class="plus-sign">+</span></h3><hr>
-        <h3>Why is Influencer Marketing Important?<span class="plus-sign">+</span></h3><hr>
-        <h3>How Much Does Influencer Marketing Cost?<span class="plus-sign">+</span></h3><hr>
+        <h3>What is Influencer Marketing?</h3><hr>
+        <h3>How Does Influencer Marketing Work?</h3><hr>
+        <h3>Why is Influencer Marketing Important?</h3><hr>
+        <h3>How Much Does Influencer Marketing Cost?</h3><hr>
 </section>
-
-<section class="search-influencers">
+<section class="search-influencers"></section>
     <div class="search-content">
         
         <h4>Find and Hire Influencers</h4>
@@ -198,5 +199,62 @@
         <button>Search Influencers</button>
     </div>
 </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Creator Hub</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">2024 Influencer Marketing Report</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Discover</h3>
+                <ul>
+                    <li><a href="#">Find Influencers</a></li>
+                    <li><a href="#">Top Influencers</a></li>
+                    <li><a href="#">Search Influencers</a></li>
+                    <li><a href="#">Buy Shoutouts</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="connect-with-us">
+            <div class="footer-content">
+                <div class="footer-title">
+                    <h4>Connect<br>With Us</h4>
+                </div>
+                <div class="social-links">
+                    <div class="social-item">
+                        <img src="instagram.png" alt="Instagram">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="social-item">
+                        <img src="x.png" alt="X">
+                        <p>X</p>
+                    </div>
+                    <div class="social-item">
+                        <img src="facebook.png" alt="Facebook" class="facebook">
+                        <p>facebook</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
 </body>
 </html>
