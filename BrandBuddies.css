@@ -12,7 +12,7 @@ header {
     padding-right:80px;
     margin-bottom:50px;
     width:1200px;
-    margin-left:20px;
+    margin-left:60px;
 }
 .logo{
     font-family:Irish Grover;
@@ -102,7 +102,7 @@ nav ul {
     box-shadow:4px 4px 10px grey;
     padding:10px;
     width:600px;
-    margin-left:350px;
+    margin-left:400px;
 }
 
 .search-field select, .search-field input {
@@ -151,7 +151,11 @@ img{
 }
 
 .influencer h3, .influencer p {
-    margin: 10px 0;
+    margin: 10px 0; 
+}
+.influencer a{
+    color:black;
+    text-decoration: none;
 }
 h2{
     text-align:left;
@@ -338,7 +342,6 @@ hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     overflow:hidden;
 }
 
@@ -353,7 +356,7 @@ hr{
     margin-bottom: 20px;
     width: 80%;
     max-width: 1000px;
-    
+    margin-left:180px;
     overflow:hidden;
 }
 
@@ -384,4 +387,87 @@ hr{
 .search-content button:hover {
     background-color: darkgrey;
     color: #fff;
+}
+/* footer */
+
+footer {
+    width: 70%;
+    padding: 40px;
+    margin-left:160px;
+    margin-top:50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e0e0e0;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top:20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.footer-title h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #762717; 
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.social-item {
+    text-align: center;
+}
+
+.social-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.social-item p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.facebook{
+    border-radius:200px;
 }
